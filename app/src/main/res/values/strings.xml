@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Busca não Primos</string>
+    <string name="num">Insira um número entre 0 e 100</string>
+    <string name="btn01">Buscar números não primos</string>
+    <string name="resultado">Os números não primos aparecerão aqui</string>
+    <string name="buscanovamente">Buscar Novamente</string>
+    <string name="script_buscanovamente">Buscar Novamente</string>
+    <string name="titleresultado">"Números não Primos entre 0 e "</string>
+    <string name="alert1">Insira um número de 0 a 100</string>
+    <string name="alert2">O número precisa estar entre 0 e 100</string>
+</resources>
