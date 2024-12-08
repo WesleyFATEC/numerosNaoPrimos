@@ -18,8 +18,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     private EditText editText;
-    private TextView textView;
-    private TextView title;
+    private TextView textView, title;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,19 +33,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
         editText = findViewById(R.id.editTextText);
-        Button button = findViewById(R.id.btn01);
+        button = findViewById(R.id.btn01);
         textView = findViewById(R.id.textView);
 
         button.setOnClickListener(v -> {
             String input = editText.getText().toString();
             if (input.isEmpty()){
-                Toast.makeText(MainActivity.this, getString(R.string.alert1), Toast.LENGTH_SHORT).show();
                 editText.setError(getString(R.string.alert1));
                 return;
             }
             int number = Integer.parseInt(input);
             if (number < 0 || number > 100) {
-                Toast.makeText(MainActivity.this, getString(R.string.alert2), Toast.LENGTH_SHORT).show();
                 editText.setError(getString(R.string.alert2));
                 editText.setText("");
                 return;
